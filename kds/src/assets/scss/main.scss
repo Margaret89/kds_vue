@@ -1,0 +1,36 @@
+@import "utils/vars";
+
+// bootstrap
+// @import "~bootstrap/scss/bootstrap-grid";
+
+
+// Наш сайт
+// @import "utils/libs";
+@import "utils/mixins";
+@import "utils/fonts";
+@import "utils/reset";
+
+@import "layouts/main";
+@import "components/icons";
+@import "components/type-icon";
+@import "components/splash";
+@import "components/progress";
+@import "components/registration";
+@import "components/order-card";
+@import "components/msg";
+@import "components/panel-actions";
+@import "components/sidebar";
+@import "components/components";
+@import "components/table-orders";
+@import "components/popup-choose";
+@import "components/panel-search";
+@import "components/popup-identif";
+@import "components/popup-identif-code";
+@import "components/enlarge-order";
+@import "components/notice";
+@import "components/enlarge-item";
+@import "components/popup-video";
+@import "components/popup-instruction";
+@import "components/popup-lang";
+@import "components/popup-check";
+@import "components/progress-circle";

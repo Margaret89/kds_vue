@@ -1,0 +1,28 @@
+/*-------------- splash -----------------*/
+.splash{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	gap: 95px;
+	width: 100vw;
+	height: 100vh;
+	padding: 20px;
+	backdrop-filter: blur(50px);
+	animation: splash-opacity 1.5s ease 0s;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 100;
+
+	img{max-width: 70%;}
+}
+
+@keyframes splash-opacity {
+	0% {opacity: 0;}
+	100% {opacity: 1;}
+}
+
+@media (max-width: 767px) {
+	.splash{gap: 60px;}
+}

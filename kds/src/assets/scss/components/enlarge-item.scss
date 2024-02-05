@@ -1,0 +1,205 @@
+/*-------------- enlarge-item -----------------*/
+.enlarge-item{
+	width: 1564px;
+	max-width: calc(100% - 30px);
+	position: relative;
+	z-index: 1;
+
+	&__bg{
+		display: block;
+		width: 100%;
+		height: 100%;
+		background: #fff;
+		background-size: cover;
+		clip-path: polygon(26px 0.5px, 26px 0.5px, 21.8637581px 0.8337509px, 17.9400128px 1.8000032px, 14.2812647px 3.3462563px, 10.9400144px 5.4200096px, 7.9687625px 7.9687625px, 5.4200096px 10.9400144px, 3.3462563px 14.2812647px, 1.8000032px 17.9400128px, 0.8337509px 21.8637581px, 0.5px 26px, 0.5px calc(100% - 26.5px), 0.5px calc(100% - 26.5px), 0.8337509px calc(100% - 22.363831px), 1.8000032px calc(100% - 18.440128px), 3.3462563px calc(100% - 14.781397px), 5.4200096px calc(100% - 11.440144px), 7.9687625px calc(100% - 8.468875px), 10.9400144px calc(100% - 5.9200959999999px), 14.2812647px calc(100% - 3.846313px), 17.9400128px calc(100% - 2.300032px), 21.8637581px calc(100% - 1.333759px), 26px calc(100% - 1px), calc(50% - 89.169px) calc(100% - 1px), calc(50% - 89.169px) calc(100% - 1px), calc(50% - 85.063053px) calc(100% - 1.3305929999999px), calc(50% - 81.144144px) calc(100% - 2.2851439999997px), calc(50% - 77.443071px) calc(100% - 3.8078110000001px), calc(50% - 73.990632px) calc(100% - 5.8427519999999px), calc(50% - 70.817625px) calc(100% - 8.334125px), calc(50% - 67.954848px) calc(100% - 11.226088px), calc(50% - 65.433099px) calc(100% - 14.462799px), calc(50% - 63.283176px) calc(100% - 17.988416px), calc(50% - 61.535877px) calc(100% - 21.747097px), calc(50% - 60.222px) calc(100% - 25.683px), calc(50% - 60.222px) calc(100% - 25.683px), calc(50% - 59.263097px) calc(100% - 29.001542px), calc(50% - 58.155256px) calc(100% - 32.394136px), calc(50% - 56.887779px) calc(100% - 35.834334px), calc(50% - 55.449968px) calc(100% - 39.295688px), calc(50% - 53.831125px) calc(100% - 42.75175px), calc(50% - 52.020552px) calc(100% - 46.176072px), calc(50% - 50.007551px) calc(100% - 49.542206px), calc(50% - 47.781424px) calc(100% - 52.823704px), calc(50% - 45.331473px) calc(100% - 55.994118px), calc(50% - 42.647px) calc(100% - 59.027px), calc(50% - 42.647px) calc(100% - 59.027px), calc(50% - 39.720848px) calc(100% - 61.892392px), calc(50% - 36.537824px) calc(100% - 64.569216px), calc(50% - 33.086876px) calc(100% - 67.030844px), calc(50% - 29.356952px) calc(100% - 69.250648px), calc(50% - 25.337px) calc(100% - 71.202px), calc(50% - 21.015968px) calc(100% - 72.858272px), calc(50% - 16.382804px) calc(100% - 74.192836px), calc(50% - 11.426456px) calc(100% - 75.179064px), calc(50% - 6.1358719999999px) calc(100% - 75.790328px), calc(50% - 0.50000000000011px) calc(100% - 76px), calc(50% - 0.5px) calc(100% - 76px), calc(50% - -5.1195060000001px) calc(100% - 75.791463px), calc(50% - -10.392848px) calc(100% - 75.183464px), calc(50% - -15.331162px) calc(100% - 74.202421px), calc(50% - -19.945584px) calc(100% - 72.874752px), calc(50% - -24.24725px) calc(100% - 71.226875px), calc(50% - -28.247296px) calc(100% - 69.285208px), calc(50% - -31.956858px) calc(100% - 67.076169px), calc(50% - -35.387072px) calc(100% - 64.626176px), calc(50% - -38.549074px) calc(100% - 61.961647px), calc(50% - -41.454px) calc(100% - 59.109px), calc(50% - -41.454px) calc(100% - 59.109px), calc(50% - -44.117787px) calc(100% - 56.089071px), calc(50% - -46.547136px) calc(100% - 52.931568px), calc(50% - -48.752829px) calc(100% - 49.662717px), calc(50% - -50.745648px) calc(100% - 46.308744px), calc(50% - -52.536375px) calc(100% - 42.895875px), calc(50% - -54.135792px) calc(100% - 39.450336px), calc(50% - -55.554681px) calc(100% - 35.998353px), calc(50% - -56.803824px) calc(100% - 32.566152px), calc(50% - -57.894003px) calc(100% - 29.179959px), calc(50% - -58.836px) calc(100% - 25.866px), calc(50% - -58.836px) calc(100% - 25.866px), calc(50% - -60.139074px) calc(100% - 21.905776px), calc(50% - -61.879632px) calc(100% - 18.122048px), calc(50% - -64.026678px) calc(100% - 14.571432px), calc(50% - -66.549216px) calc(100% - 11.310544px), calc(50% - -69.41625px) calc(100% - 8.396px), calc(50% - -72.596784px) calc(100% - 5.884416px), calc(50% - -76.059822px) calc(100% - 3.832408px), calc(50% - -79.774368px) calc(100% - 2.2965919999999px), calc(50% - -83.709426px) calc(100% - 1.333584px), calc(50% - -87.834px) calc(100% - 1px), calc(100% - 26.5px) calc(100% - 1px), calc(100% - 26.5px) calc(100% - 1px), calc(100% - 22.36456px) calc(100% - 1.3337589999999px), calc(100% - 18.44128px) calc(100% - 2.3000319999996px), calc(100% - 14.78272px) calc(100% - 3.846313px), calc(100% - 11.44144px) calc(100% - 5.9200959999999px), calc(100% - 8.47px) calc(100% - 8.468875px), calc(100% - 5.9209600000002px) calc(100% - 11.440144px), calc(100% - 3.8468800000001px) calc(100% - 14.781397px), calc(100% - 2.3003200000001px) calc(100% - 18.440128px), calc(100% - 1.3338399999998px) calc(100% - 22.363831px), calc(100% - 1.0000000000002px) calc(100% - 26.5px), calc(100% - 1px) 26px, calc(100% - 1px) 26px, calc(100% - 1.3338399999998px) 21.8637581px, calc(100% - 2.3003199999994px) 17.9400128px, calc(100% - 3.8468800000001px) 14.2812647px, calc(100% - 5.9209599999999px) 10.9400144px, calc(100% - 8.47px) 7.9687625px, calc(100% - 11.44144px) 5.4200096px, calc(100% - 14.78272px) 3.3462563px, calc(100% - 18.44128px) 1.8000032px, calc(100% - 22.36456px) 0.8337509px, calc(100% - 26.5px) 0.5px, 26px 0.5px);
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: -1;
+		transition: all 0.3s ease 0s;
+	}
+
+	&__border{
+		width: calc(100% + 2px);
+		height: calc(100% + 2px);
+		background: #E5E7EB;
+		clip-path: polygon(26px 0.5px, 26px 0.5px, 21.8637581px 0.8337509px, 17.9400128px 1.8000032px, 14.2812647px 3.3462563px, 10.9400144px 5.4200096px, 7.9687625px 7.9687625px, 5.4200096px 10.9400144px, 3.3462563px 14.2812647px, 1.8000032px 17.9400128px, 0.8337509px 21.8637581px, 0.5px 26px, 0.5px calc(100% - 26.5px), 0.5px calc(100% - 26.5px), 0.8337509px calc(100% - 22.363831px), 1.8000032px calc(100% - 18.440128px), 3.3462563px calc(100% - 14.781397px), 5.4200096px calc(100% - 11.440144px), 7.9687625px calc(100% - 8.468875px), 10.9400144px calc(100% - 5.9200959999999px), 14.2812647px calc(100% - 3.846313px), 17.9400128px calc(100% - 2.300032px), 21.8637581px calc(100% - 1.333759px), 26px calc(100% - 1px), calc(50% - 89.169px) calc(100% - 1px), calc(50% - 89.169px) calc(100% - 1px), calc(50% - 85.063053px) calc(100% - 1.3305929999999px), calc(50% - 81.144144px) calc(100% - 2.2851439999997px), calc(50% - 77.443071px) calc(100% - 3.8078110000001px), calc(50% - 73.990632px) calc(100% - 5.8427519999999px), calc(50% - 70.817625px) calc(100% - 8.334125px), calc(50% - 67.954848px) calc(100% - 11.226088px), calc(50% - 65.433099px) calc(100% - 14.462799px), calc(50% - 63.283176px) calc(100% - 17.988416px), calc(50% - 61.535877px) calc(100% - 21.747097px), calc(50% - 60.222px) calc(100% - 25.683px), calc(50% - 60.222px) calc(100% - 25.683px), calc(50% - 59.263097px) calc(100% - 29.001542px), calc(50% - 58.155256px) calc(100% - 32.394136px), calc(50% - 56.887779px) calc(100% - 35.834334px), calc(50% - 55.449968px) calc(100% - 39.295688px), calc(50% - 53.831125px) calc(100% - 42.75175px), calc(50% - 52.020552px) calc(100% - 46.176072px), calc(50% - 50.007551px) calc(100% - 49.542206px), calc(50% - 47.781424px) calc(100% - 52.823704px), calc(50% - 45.331473px) calc(100% - 55.994118px), calc(50% - 42.647px) calc(100% - 59.027px), calc(50% - 42.647px) calc(100% - 59.027px), calc(50% - 39.720848px) calc(100% - 61.892392px), calc(50% - 36.537824px) calc(100% - 64.569216px), calc(50% - 33.086876px) calc(100% - 67.030844px), calc(50% - 29.356952px) calc(100% - 69.250648px), calc(50% - 25.337px) calc(100% - 71.202px), calc(50% - 21.015968px) calc(100% - 72.858272px), calc(50% - 16.382804px) calc(100% - 74.192836px), calc(50% - 11.426456px) calc(100% - 75.179064px), calc(50% - 6.1358719999999px) calc(100% - 75.790328px), calc(50% - 0.50000000000011px) calc(100% - 76px), calc(50% - 0.5px) calc(100% - 76px), calc(50% - -5.1195060000001px) calc(100% - 75.791463px), calc(50% - -10.392848px) calc(100% - 75.183464px), calc(50% - -15.331162px) calc(100% - 74.202421px), calc(50% - -19.945584px) calc(100% - 72.874752px), calc(50% - -24.24725px) calc(100% - 71.226875px), calc(50% - -28.247296px) calc(100% - 69.285208px), calc(50% - -31.956858px) calc(100% - 67.076169px), calc(50% - -35.387072px) calc(100% - 64.626176px), calc(50% - -38.549074px) calc(100% - 61.961647px), calc(50% - -41.454px) calc(100% - 59.109px), calc(50% - -41.454px) calc(100% - 59.109px), calc(50% - -44.117787px) calc(100% - 56.089071px), calc(50% - -46.547136px) calc(100% - 52.931568px), calc(50% - -48.752829px) calc(100% - 49.662717px), calc(50% - -50.745648px) calc(100% - 46.308744px), calc(50% - -52.536375px) calc(100% - 42.895875px), calc(50% - -54.135792px) calc(100% - 39.450336px), calc(50% - -55.554681px) calc(100% - 35.998353px), calc(50% - -56.803824px) calc(100% - 32.566152px), calc(50% - -57.894003px) calc(100% - 29.179959px), calc(50% - -58.836px) calc(100% - 25.866px), calc(50% - -58.836px) calc(100% - 25.866px), calc(50% - -60.139074px) calc(100% - 21.905776px), calc(50% - -61.879632px) calc(100% - 18.122048px), calc(50% - -64.026678px) calc(100% - 14.571432px), calc(50% - -66.549216px) calc(100% - 11.310544px), calc(50% - -69.41625px) calc(100% - 8.396px), calc(50% - -72.596784px) calc(100% - 5.884416px), calc(50% - -76.059822px) calc(100% - 3.832408px), calc(50% - -79.774368px) calc(100% - 2.2965919999999px), calc(50% - -83.709426px) calc(100% - 1.333584px), calc(50% - -87.834px) calc(100% - 1px), calc(100% - 26.5px) calc(100% - 1px), calc(100% - 26.5px) calc(100% - 1px), calc(100% - 22.36456px) calc(100% - 1.3337589999999px), calc(100% - 18.44128px) calc(100% - 2.3000319999996px), calc(100% - 14.78272px) calc(100% - 3.846313px), calc(100% - 11.44144px) calc(100% - 5.9200959999999px), calc(100% - 8.47px) calc(100% - 8.468875px), calc(100% - 5.9209600000002px) calc(100% - 11.440144px), calc(100% - 3.8468800000001px) calc(100% - 14.781397px), calc(100% - 2.3003200000001px) calc(100% - 18.440128px), calc(100% - 1.3338399999998px) calc(100% - 22.363831px), calc(100% - 1.0000000000002px) calc(100% - 26.5px), calc(100% - 1px) 26px, calc(100% - 1px) 26px, calc(100% - 1.3338399999998px) 21.8637581px, calc(100% - 2.3003199999994px) 17.9400128px, calc(100% - 3.8468800000001px) 14.2812647px, calc(100% - 5.9209599999999px) 10.9400144px, calc(100% - 8.47px) 7.9687625px, calc(100% - 11.44144px) 5.4200096px, calc(100% - 14.78272px) 3.3462563px, calc(100% - 18.44128px) 1.8000032px, calc(100% - 22.36456px) 0.8337509px, calc(100% - 26.5px) 0.5px, 26px 0.5px);
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		z-index: -1;
+	}
+
+	&__close{
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		flex-shrink: 0;
+		width: 56px;
+		height: 56px;
+		background: var(--color-grey);
+		border-radius: 50%;
+		transition: background-color 0.2s ease 0s;
+		cursor: pointer;
+		position: absolute;
+		top: 32px;
+		right: 34px;
+
+		.icon{fill: var(--color-text);}
+		&:hover{background-color: var(--color-darkgrey);}
+	}
+
+	&__vip{
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		width: 62px;
+		height: 90px;
+		background: url(../img/bg-flag.png) no-repeat 0 0;
+		background-size: contain;
+		position: absolute;
+		top: 0;
+		right: 142px;
+		
+		.icon{fill: #926D0F;}
+	}
+
+	&__top{padding: 47px 100px 26px 50px;}
+
+	&__head{
+		display: flex;
+		align-items: center;
+		flex-wrap: wrap;
+		gap: 15px;
+		margin-bottom: 54px;
+	}
+
+	&__title{
+		font-size: 4.6rem;
+		font-weight: 600;
+		line-height: 1.2;
+	}
+
+	&__pages{
+		padding: 8px 10px;
+		border-radius: 10px;
+		background: var(--color-primary);
+		font-size: 1.8rem;
+		font-weight: 700;
+		color: #fff;
+		line-height: 1;
+	}
+
+	&__name-wrap{
+		display: flex;
+		gap: 22px;
+	}
+
+	&__num{
+		flex-shrink: 0;
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		min-width: 44px;
+		height: 44px;
+		border-radius: 13px;
+		background: var(--color-text);
+		font-size: 2.5rem;
+		font-weight: 600;
+		line-height: 1;
+		color: #fff;
+
+		&_orange{background: var(--color-primary);}
+	}
+
+	&__name{
+		font-size: 3.4rem;
+		font-weight: 500;
+	}
+
+	&__note{
+		padding: 15px 55px;
+		background: #FFF7F8;
+		border-top: 1px solid #E5E7EB;
+		border-bottom: 1px solid #E5E7EB;
+		font-size: 2.3rem;
+		line-height: 1.5;
+		color: var(--color-danger);
+	}
+
+	&__list{
+		display: flex;
+		flex-wrap: wrap;
+		gap: 0 73px;
+		padding: 28px 55px;
+	}
+
+	&__val{
+		width: 470px;
+		padding: 9px 5px;
+		font-size: 2.4rem;
+		line-height: 1.4;
+		border-bottom: 1px dashed #ABAEBC;
+		margin-bottom: 6px;
+	}
+
+	&__bottom{
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		gap: 100px;
+		padding: 32px 50px 32px 62px;
+		border-top: 1px solid #E5E7EB;
+	}
+
+	&__actions{
+		display: flex;
+		align-items: center;
+		gap: 15px;
+
+		.btn{
+			min-width: 0;
+			font-size: 1.6rem;
+			padding: 0 25px;
+		}
+	}
+
+	&__label{
+		font-size: 1.6rem;
+		margin-right: 7px;
+	}
+
+	&__nav{
+		display: flex;
+		align-items: center;
+		gap: 24px;
+	}
+
+	&__arr{
+		cursor: pointer;
+
+		.icon{
+			fill: #67707B;
+			transition: fill 0.2s ease 0s;
+		}
+
+		&:hover .icon{fill: var(--color-primary);}
+
+		&.disable{
+			cursor: auto;
+
+			.icon{fill: #E3E6EA;}
+		}
+	}
+
+	.btn-circle{
+		width: 102px;
+		height: 102px;
+		position: absolute;
+		bottom: -36px;
+		left: 50%;
+		transform: translateX(-50%);
+		z-index: 2;
+	}
+}

@@ -1,0 +1,24 @@
+/*-------------- progress -----------------*/
+.progress{
+	width: 206px;
+	height: 7px;
+	border-radius: 3.5px;
+	background: rgba(31, 36, 44, 0.2);
+	position: relative;
+	overflow: hidden;
+
+	&__content{
+		width: 0;
+		height: 100%;
+		border-radius: 3.5px;
+		background: var(--color-text);
+		transition: width 0.2s ease 0s;
+		animation: progress 1.5s ease 1.5s;
+		animation-fill-mode: forwards;
+	}
+}
+
+@keyframes progress {
+	0% {width: 0;}
+	100% {width: 100%;}
+}

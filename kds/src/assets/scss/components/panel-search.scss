@@ -1,0 +1,127 @@
+/*-------------- panel-search -----------------*/
+.panel-search{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 58px;
+	width: 100%;
+	padding: 17px 36px 17px 17px;
+	background: #fff;
+	border-radius: 33px;
+	border: 1px solid #D6D8DE;
+
+	&__sect{position: relative;}
+	&__sect:first-child{width: 100%;}
+	&__sect:not(:first-child){flex-shrink: 0;}
+
+	&__sect:not(:first-child)::after{
+		content: '';
+		display: inline-block;
+		width: 1px;
+		height: 54px;
+		background: #E5E7EB;
+		position: absolute;
+		top: 50%;
+		left: -29px;
+		transform: translateY(-50%);
+	}
+
+	&__field{
+		position: relative;
+
+		input[type="text"]{
+			height: 6.8rem;
+			width: 100%;
+			font-family: var(--font-site);
+			font-size: 3.3rem;
+			font-weight: 500;
+			padding: 0 15px 0 75px;
+			border-radius: 23px;
+			border: 1px solid rgba(141, 169, 205, 0.1);
+			background: rgba(141, 169, 205, 0.1);
+			outline: 0;
+			margin: 0;
+			box-shadow: none;
+			transition: border 0.2s ease 0s;
+			
+			&:focus{border-color: var(--color-text);}
+		}
+	}
+
+	&__icon{
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		width: 65px;
+		height: 100%;
+		cursor: pointer;
+		position: absolute;
+		top: 0;
+		left: 0;
+
+		.icon{
+			fill: var(--color-text);
+			transition: fill 0.2s ease 0s;
+		}
+
+		&:hover .icon{fill: var(--color-primary);}
+	}
+
+	&__keyboards{
+		display: flex;
+		gap: 10px;
+	}
+
+	&__num{
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		flex-shrink: 0;
+		width: 68px;
+		height: 68px;
+		background: rgba(141, 169, 205, 0.1);
+		border-radius: 23px;
+		font-size: 3.3rem;
+		font-weight: 500;
+		line-height: 1;
+		color: var(--color-text);
+		transition: all 0.2s ease 0s;
+		cursor: pointer;
+
+		&:hover,
+		&.active{
+			background: #67707B;
+			color: #fff;
+		}
+
+		&.active{cursor: auto;}
+	}
+
+	&__reset{
+		flex-shrink: 0;
+		cursor: pointer;
+
+		.icon{
+			fill: #67707B;
+			transition: fill 0.2s ease 0s;
+		}
+
+		&:hover .icon{fill: var(--color-primary);}
+	}
+
+	&__close{
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		flex-shrink: 0;
+		width: 56px;
+		height: 56px;
+		background: var(--color-grey);
+		border-radius: 50%;
+		transition: background-color 0.2s ease 0s;
+		cursor: pointer;
+
+		.icon{fill: var(--color-text);}
+		&:hover{background-color: var(--color-darkgrey);}
+	}
+}

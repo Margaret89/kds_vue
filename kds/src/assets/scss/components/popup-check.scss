@@ -1,0 +1,70 @@
+/*-------------- popup-check -----------------*/
+.popup-check{
+	width: 450px;
+	max-width: calc(100% - 30px);
+	border-radius: 33px;
+	background: #fff;
+	border: 1px solid #CBD1DA;
+	padding: 114px 44px 80px;
+	position: relative;
+
+	&__close{
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		flex-shrink: 0;
+		width: 56px;
+		height: 56px;
+		background: var(--color-grey);
+		border-radius: 50%;
+		transition: background-color 0.2s ease 0s;
+		cursor: pointer;
+		position: absolute;
+		top: 38px;
+		right: 33px;
+
+		.icon{fill: var(--color-text);}
+		&:hover{background-color: var(--color-darkgrey);}
+	}
+
+	&__title{
+		font-size: 3.4rem;
+		font-weight: 600;
+	}
+
+	&__text{
+		font-size: 1.5rem;
+		margin-top: 5px;
+	}
+
+	.progress-circle{
+		margin-top: 60px;
+		text-align: center;
+	}
+
+	&__btn{
+		margin-top: 30px;
+		.btn{width: 100%;}
+	}
+
+	&__text + &__btn{margin-top: 45px;}
+
+	&__version{
+		margin-top: 45px;
+
+		.btn{
+			width: 100%;
+			justify-content: flex-start;
+			gap: 14px;
+			font-size: 1.5rem;
+			padding: 0 22px;
+		}
+	}
+
+	&__note{
+		font-size: 1.6rem;
+		font-weight: 500;
+		text-align: center;
+		margin-top: 42px;
+	}
+}

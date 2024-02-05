@@ -1,0 +1,80 @@
+// Poppins
+@font-face {
+	font-family: 'Poppins';
+	src: local('Poppins Regular'), local('Poppins-Regular'),
+		url('@/assets/fonts/Poppins-Regular.woff2') format('woff2'),
+		url('@/assets/fonts/Poppins-Regular.woff') format('woff');
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Poppins';
+	src: local('Poppins Bold'), local('Poppins-Bold'),
+		url('@/assets/fonts/Poppins-Bold.woff2') format('woff2'),
+		url('@/assets/fonts/Poppins-Bold.woff') format('woff');
+	font-weight: 700;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Poppins';
+	src: local('Poppins Bold Italic'), local('Poppins-Bold-Italic'),
+		url('@/assets/fonts/Poppins-BoldItalic.woff2') format('woff2'),
+		url('@/assets/fonts/Poppins-BoldItalic.woff') format('woff');
+	font-weight: 700;
+	font-style: italic;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Poppins';
+	src: local('Poppins Italic'), local('Poppins-Italic'),
+		url('@/assets/fonts/Poppins-Italic.woff2') format('woff2'),
+		url('@/assets/fonts/Poppins-Italic.woff') format('woff');
+	font-weight: 400;
+	font-style: italic;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Poppins';
+	src: local('Poppins Medium'), local('Poppins-Medium'),
+		url('@/assets/fonts/Poppins-Medium.woff2') format('woff2'),
+		url('@/assets/fonts/Poppins-Medium.woff') format('woff');
+	font-weight: 500;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Poppins';
+	src: local('Poppins Medium Italic'), local('Poppins-Medium-Italic'),
+		url('@/assets/fonts/Poppins-MediumItalic.woff2') format('woff2'),
+		url('@/assets/fonts/Poppins-MediumItalic.woff') format('woff');
+	font-weight: 500;
+	font-style: italic;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Poppins';
+	src: local('Poppins Semi Bold'), local('Poppins-Semi-Bold'),
+		url('@/assets/fonts/Poppins-SemiBold.woff2') format('woff2'),
+		url('@/assets/fonts/Poppins-SemiBold.woff') format('woff');
+	font-weight: 600;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Poppins';
+	src: local('Poppins Semi Bold Italic'), local('Poppins-Semi-Bold-Italic'),
+		url('@/assets/fonts/Poppins-SemiBoldItalic.woff2') format('woff2'),
+		url('@/assets/fonts/Poppins-SemiBoldItalic.woff') format('woff');
+	font-weight: 600;
+	font-style: italic;
+	font-display: swap;
+}

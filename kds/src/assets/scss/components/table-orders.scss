@@ -1,0 +1,66 @@
+/*-------------- table-orders -----------------*/
+.table-orders-wrap{
+	border-radius: 25px;
+	border: 1px solid #D6D8DE;
+	overflow: hidden;
+	margin-top: 40px;
+}
+
+.table-orders{
+	width: calc(100% + 2px);
+	background: #fff;
+	overflow: hidden;
+	margin: -1px;
+
+	td{
+		padding: 14px;
+		border: 1px solid #D6D8DE;
+	}
+
+	&__info{
+		width: 170px;
+		vertical-align: middle;
+		text-align: center;
+	}
+
+	&__title{
+		font-size: 1.6rem;
+		font-weight: 600;
+		text-align: center;
+	}
+
+	&__num{
+		font-size: 2.6rem;
+		font-weight: 700;
+		line-height: 1;
+		margin-top: 10px;
+	}
+
+	&__label{
+		font-size: 1.5rem;
+		font-weight: 600;
+		color: #67707B;
+	}
+
+	&__val{
+		width: 97px;
+		font-size: 1.6rem;
+		font-weight: 600;
+		color: #67707B;
+		text-align: center;
+		background: #F6F8FC;
+
+		&_green{
+			color: var(--color-second);
+			background: rgba(41, 207, 142, 0.11);
+		}
+
+		&_red{
+			color: var(--color-danger);
+			background: rgba(255, 36, 69, 0.09);
+		}
+	}
+
+	td.table-orders__val{border-left: 0;}
+	td.table-orders__label{border-right: 0;}
+}

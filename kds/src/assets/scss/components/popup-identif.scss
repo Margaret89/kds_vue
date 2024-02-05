@@ -1,0 +1,159 @@
+/*-------------- popup-identif -----------------*/
+.popup-identif-wrap{
+	width: 724px;
+	max-width: calc(100% - 30px);
+	padding: 185px 0;
+	position: relative;
+
+	.btn-photo{
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		margin: 0 auto;
+	}
+}
+
+.popup-identif{
+	background: #fff;
+	border-radius: 33px;
+	border: 1px solid #D6D8DE;
+	position: relative;
+	overflow: hidden;
+
+	&__content{padding: 45px 40px;}
+
+	&__close{
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		flex-shrink: 0;
+		width: 56px;
+		height: 56px;
+		background: var(--color-grey);
+		border-radius: 50%;
+		transition: background-color 0.2s ease 0s;
+		cursor: pointer;
+		position: absolute;
+		top: 42px;
+		right: 36px;
+
+		.icon{fill: var(--color-text);}
+		&:hover{background-color: var(--color-darkgrey);}
+	}
+
+	&__head{
+		display: flex;
+		align-items: center;
+		gap: 15px;
+		padding-right: 80px;
+	}
+
+	&__icon{
+		flex-shrink: 0;
+
+		.icon{fill: var(--color-text);}
+	}
+
+	&__title{
+		font-size: 3.4rem;
+		font-weight: 600;
+	}
+
+	&__text{
+		font-size: 1.5rem;
+		margin-top: 8px;
+	}
+
+	&__photo{
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		height: 360px;
+		margin-top: 37px;
+		border-radius: 33px;
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
+		overflow: hidden;
+		position: relative;
+
+		&_blur::before{
+			content: '';
+			display: block;
+			width: 100%;
+			height: 100%;
+			background: rgba(31, 36, 44, 0.65);
+			backdrop-filter: blur(20px);
+			position: absolute;
+			top: 0;
+			left: 0;
+		}
+
+		.btn{
+			min-width: 0;
+			position: relative;
+			font-size: 1.5rem;
+			padding: 0 20px;
+		}
+	}
+
+	&__frame{
+		position: absolute;
+		top: 21px;
+		left: 208px;
+		transition: all 0.2s ease 0s;
+		cursor: move;
+
+		.icon{fill: #FFD600;}
+	}
+}
+
+.btn-photo{
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	width: 135px;
+	height: 135px;
+	border-radius: 51px;
+	background: #1F242C;
+	transition: background-color 0.2s ease 0s;
+	cursor: pointer;
+
+	.icon{
+		fill: #00FF9B;
+		transition: fill 0.2s ease 0s;
+	}
+
+	&:hover{
+		background: var(--color-primary);
+		.icon{fill: #fff;}
+	}
+}
+
+.popup-identif-info{
+	display: flex;
+	align-items: center;
+	gap: 115px;
+	padding: 40px;
+	background: #FFF9F4;
+	border-top: 1px solid #E5E7EB;
+
+	&__title{
+		font-size: 2.4rem;
+		font-weight: 600;
+	}
+
+	&__text{
+		font-size: 1.5rem;
+		line-height: 1.5;
+		margin-top: 3px;
+	}
+
+	.btn{
+		flex-shrink: 0;
+		min-width: 0;
+		font-size: 1.8rem;
+		padding: 0 20px;
+	}
+}
