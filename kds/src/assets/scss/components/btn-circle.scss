@@ -1,0 +1,25 @@
+/*-------------- btn-circle -----------------*/
+.btn-circle{
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	width: 80px;
+	height: 80px;
+	border-radius: 50%;
+	background: var(--color-second);
+	transition: background-color 0.2s ease 0s;
+	cursor: pointer;
+
+	.icon{fill: #fff;}
+	&:hover{background: var(--color-second-hover);}
+	&_orange{background: var(--color-primary);}
+	&_orange:hover{background: var(--color-primary-hover);}
+
+	&.disable{
+		background: var(--color-second);
+		opacity: 0.2;
+		cursor: auto;
+	}
+
+	&_orange.disable{background: var(--color-primary);}
+}
