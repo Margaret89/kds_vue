@@ -374,6 +374,7 @@
 		border: 1px solid #E5E7EB;
 	}
 
+	&_no-clip .btn-circle{display: none;}
 	&_no-clip &__border{display: none;}
 	&_no-clip.selected &__bg{border: 3px solid var(--color-text);}
 

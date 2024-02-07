@@ -1,5 +1,5 @@
 <template>
-	<div :class="['order-card', { 'disable' : disable }, { ['order-card_'+status_card] : status_card }, { 'delete' : del }]">
+	<div :class="['order-card', { 'disable' : disable }, { ['order-card_'+status_card] : status_card }, { 'delete' : del }, { 'order-card_no-clip' : no_clip}, { 'selected' : selected}]">
 		<div class="order-card__border"></div>
 		<div class="order-card__shadow-down"></div>
 		<div class="order-card__shadow-up"></div>
@@ -205,6 +205,8 @@ export default {
 		'disable',
 		'status_card',
 		'del',
+		'no_clip',
+		'selected',
 	],
 	data: () => ({
 		icons:Icons,

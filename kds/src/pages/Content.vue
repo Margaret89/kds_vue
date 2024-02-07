@@ -6,9 +6,9 @@
 			<!-- 
 
 			
-			<li><a href="trash.html" target="_blank">Trash</a></li>
-			<li><a href="trash-order-selection.html" target="_blank">Trash - order selection</a></li>
-			<li><a href="trash-popup.html" target="_blank">Trash - order selection (popup &quot;Please choose position&quot;)</a></li>
+			
+			
+			
 			<li><a href="archive.html" target="_blank">Archive</a></li>
 			<li><a href="archive-select.html" target="_blank">Archive - remake items selection</a></li>
 			<li><a href="archive-remade-log.html" target="_blank">Archive - remade log</a></li>
@@ -38,6 +38,9 @@
 			<li><router-link to="/live-lating-orders">Live - lating orders</router-link></li>
 			<li><router-link to="/live-sidebar">Live - with sidebar and pizza example</router-link></li>
 			<li><router-link to="/live-trash">Live - with trash</router-link></li>
+			<li><router-link to="/trash">Trash</router-link></li>
+			<li><router-link to="/trash-selection">Trash - order selection</router-link></li>
+			<li><router-link to="/trash-popup">Trash - order selection (popup &quot;Please choose position&quot;)</router-link></li>
 			<li><router-link to="/typography">Typography</router-link></li>
 		</ul>
 	</div>

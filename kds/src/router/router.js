@@ -10,6 +10,9 @@ import LiveHoldAfter from "@/pages/LiveHoldAfter.vue";
 import LiveLatingOrders from "@/pages/LiveLatingOrders.vue";
 import LiveSidebar from "@/pages/LiveSidebar.vue";
 import LiveTrash from "@/pages/LiveTrash.vue";
+import Trash from "@/pages/Trash.vue";
+import TrashSelection from "@/pages/TrashSelection.vue";
+import TrashPopup from "@/pages/TrashPopup.vue";
 
 const routes = [
   {
@@ -66,6 +69,21 @@ const routes = [
     path: '/live-trash',
     name: 'live-trash',
     component: LiveTrash
+  },
+  {
+    path: '/trash',
+    name: 'trash',
+    component: Trash
+  },
+  {
+    path: '/trash-selection',
+    name: 'trash-selection',
+    component: TrashSelection
+  },
+  {
+    path: '/trash-popup',
+    name: 'trash-popup',
+    component: TrashPopup
   },
 ];
 
