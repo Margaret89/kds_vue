@@ -5,12 +5,10 @@
 		<ul>
 			<!-- 
 			
-			<li><a href="registration.html" target="_blank">Registration</a></li>
-			<li><a href="registration-password.html" target="_blank">Registration (password)</a></li>
-			<li><a href="splash-reg.html" target="_blank">Splash with loading (registration)</a></li>
-			<li><a href="live.html" target="_blank">Live</a></li>
-			<li><a href="live-dark.html" target="_blank">Live dark</a></li>
-			<li><a href="live-single-item.html" target="_blank">Live - single item in card</a></li>
+			
+			
+		
+			
 			<li><a href="live-hold.html" target="_blank">Live - hold item effect</a></li>
 			<li><a href="live-hold-after.html" target="_blank">Live - after hold item effect</a></li>
 			<li><a href="live-lating-orders.html" target="_blank">Live - lating orders</a></li>
@@ -42,6 +40,8 @@
 			<li>
 				<li><router-link to="/splash">Splash with loading</router-link></li>
 				<li><router-link to="/registration">Registration</router-link></li>
+				<li><router-link to="/live">Live</router-link></li>
+				<li><router-link to="/live-single-item">Live - single item in card</router-link></li>
 				<li><router-link to="/typography">Typography</router-link></li>
 			</li>
 		</ul>
