@@ -99,7 +99,7 @@
 import orderCard from '../components/OrderCard.vue'
 
 export default {
-	name: 'live-single-item',
+	name: 'live-hold-after',
 	components: {
 		orderCard,
 	},
@@ -125,55 +125,102 @@ export default {
 				child:[
 					{
 						id:'1',
+						num:'3',
+						num_color:'orange',
 						title:'Pizza Margarita',
 						list:[
 							{text:'Olives'},
 							{text:'Tuna'},
-							{text:'Extra cheese'},
-							{text:'Coca-cola 1.5L'},
-							{text:'1x Garlic sauce'},
-							{text:'2x Chipotle sauce'},
 						],
 						note:'Note: Without tomato sauce',
 					},
+					{
+						id:'2',
+						num:'1',
+						title:'Pizza Margarita',
+						list:[
+							{text:'Olives'},
+							{text:'Tuna'},
+							{text:'Mushrooms'},
+						]
+					},
+					{
+						id:'3',
+						num:'1',
+						title:'Pizza Margarita',
+						list:[
+							{text:'Olives'},
+							{text:'Tuna'},
+							{text:'Cheese'},
+							{text:'Sauces'},
+							{text:'Without tomato sauce'},
+						]
+					},
 				],
+				pager:'1/2',
+				btn_status:'disable'
 			},
 			{
-				title:'102',
-				count:'1/3',
-				name:'Guest',
+				title:'2101',
+				name:'Mike',
+				tag:'New',
+				tag_color:'blue',
 				order_time:'28m ago',
 				status:'TA',
-				status_icon:'ic-bell',
-				status_icon_width:'16',
-				status_icon_height:'16',
+				status_icon:'ic-pen',
+				status_icon_width:'13',
+				status_icon_height:'18',
 				time:'00:12:39',
 				header_color:'green',
 				progress:true,
 				child:[
 					{
-						id:'2',
+						id:'4',
+						num:'3',
+						num_color:'orange',
 						title:'Pizza Margarita',
 						list:[
 							{text:'Olives'},
 							{text:'Tuna'},
 							{text:'Without tomato sauce'},
 						],
+						active: true,
+					},
+					{
+						id:'5',
+						num:'1',
+						title:'Pizza Margarita',
+						list:[
+							{text:'Olives'},
+							{text:'Tuna'},
+							{text:'Without tomato sauce'},
+						]
+					},
+					{
+						id:'6',
+						num:'1',
+						title:'Pizza Margarita',
+						list:[
+							{text:'Olives'},
+							{text:'Tuna'},
+							{text:'Without tomato sauce'},
+						]
 					},
 				]
 			},
 			{
-				title:'102',
-				count:'2/3',
+				title:'2102',
 				name:'Guest',
-				order_time:'28m ago',
-				status:'TA',
-				status_icon:'ic-bell',
-				status_icon_width:'16',
-				status_icon_height:'16',
+				order_time:'1h ago',
+				status:'Delivery',
+				status_icon:'ic-pen',
+				status_icon_width:'13',
+				status_icon_height:'18',
 				child:[
 					{
-						id:'3',
+						id:'7',
+						num:'3',
+						num_color:'orange',
 						title:'Pizza Margarita',
 						list:[
 							{text:'Olives'},
@@ -182,20 +229,20 @@ export default {
 						],
 					},
 				],
-				btn_color:'orange'
+				btn_color:'orange',
 			},
 			{
-				title:'102',
-				count:'3/3',
+				title:'2103',
 				name:'Guest',
-				order_time:'28m ago',
-				status:'TA',
-				status_icon:'ic-bell',
-				status_icon_width:'16',
-				status_icon_height:'16',
+				order_time:'1h ago',
+				status:'Delivery',
+				status_icon:'ic-pen',
+				status_icon_width:'13',
+				status_icon_height:'18',
 				child:[
 					{
-						id:'4',
+						id:'8',
+						num:'1',
 						title:'Pizza Margarita',
 						list:[
 							{text:'Olives'},
@@ -208,7 +255,7 @@ export default {
 				btn_color:'orange',
 			},
 			{
-				title:'103',
+				title:'2104',
 				name:'Albert',
 				order_time:'1h ago',
 				status:'Delivery',
@@ -217,7 +264,8 @@ export default {
 				status_icon_height:'18',
 				child:[
 					{
-						id:'5',
+						id:'9',
+						num:'1',
 						title:'Pizza Margarita',
 						list:[
 							{text:'Olives'},

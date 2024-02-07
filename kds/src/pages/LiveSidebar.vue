@@ -1,5 +1,5 @@
 <template>
-	<div :class="['wrapper', {'wrapper_dark': !isDay}]" >
+	<div :class="['wrapper sidebar-open', {'wrapper_dark': !isDay}]" >
 		<main class="main">
 			<div class="order-card-list">
 				<order-card
@@ -92,6 +92,85 @@
 				</div>
 			</div>
 		</div>
+
+		<div class="sidebar">
+			<div class="sidebar__content">
+				<div class="sidebar__sect">
+					<div class="sidebar__title">Items</div>
+
+					<div class="components">
+						<div class="comp-item" v-for="item in items">
+							<div class="comp-item__text">{{ item.text }}</div>
+
+							<div class="comp-item__num">{{ item.num }}</div>
+
+							<div class="comp-item__del">
+								<svg class="icon ic-trash" width="24" height="26">
+									<use xlink:href="@/assets/sprites/sprite.svg#ic-trash"></use>
+								</svg>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="sidebar__sect">
+					<div class="sidebar__title">Groups</div>
+
+					<div class="components">
+						<div class="comp-item" v-for="item in groups">
+							<div class="comp-item__text">{{ item.text }}</div>
+
+							<div class="comp-item__num">{{ item.num }}</div>
+
+							<div class="comp-item__del">
+								<svg class="icon ic-trash" width="24" height="26">
+									<use xlink:href="@/assets/sprites/sprite.svg#ic-trash"></use>
+								</svg>
+							</div>
+						</div>
+					</div>
+
+					<div class="table-orders-wrap">
+						<table class="table-orders">
+							<tr>
+								<td class="table-orders__info" rowspan="2">
+									<div class="table-orders__title">Orders</div>
+									<div class="table-orders__num">24</div>
+								</td>
+								<td colspan="2">
+									<div class="table-orders__title">Average</div>
+								</td>
+								<td colspan="2">
+									<div class="table-orders__title">Lates</div>
+								</td>
+							</tr>
+							<tr>
+								<td class="table-orders__label">Last hour</td>
+								<td class="table-orders__val">2:34</td>
+								<td class="table-orders__label">Last hour</td>
+								<td class="table-orders__val">1</td>
+							</tr>
+							<tr>
+								<td class="table-orders__info" rowspan="2">
+									<div class="table-orders__title">Items</div>
+									<div class="table-orders__num">340</div>
+								</td>
+								<td class="table-orders__label">Today</td>
+								<td class="table-orders__val table-orders__val_green">2:10</td>
+								<td class="table-orders__label">Today</td>
+								<td class="table-orders__val table-orders__val_green">3</td>
+							</tr>
+							<tr>
+								<td class="table-orders__label">Last week</td>
+								<td class="table-orders__val table-orders__val_red">2:48</td>
+								<td class="table-orders__label">Last week</td>
+								<td class="table-orders__val table-orders__val_red">9</td>
+							</tr>
+						</table>
+					</div>
+				</div>
+			</div>
+		</div>
 	</div>
 </template>
 
@@ -99,7 +178,7 @@
 import orderCard from '../components/OrderCard.vue'
 
 export default {
-	name: 'live-single-item',
+	name: 'live-sidebar',
 	components: {
 		orderCard,
 	},
@@ -127,26 +206,66 @@ export default {
 						id:'1',
 						title:'Pizza Margarita',
 						list:[
-							{text:'Olives'},
-							{text:'Tuna'},
-							{text:'Extra cheese'},
-							{text:'Coca-cola 1.5L'},
-							{text:'1x Garlic sauce'},
-							{text:'2x Chipotle sauce'},
+							{
+								icon:'ic-circle',
+								icon_width:'18',
+								icon_height:'18',
+								text:'Green Olives',
+							},
+							{
+								icon:'ic-circle-half-right',
+								icon_width:'18',
+								icon_height:'18',
+								text:'Tuna',
+							},
+							{
+								icon:'ic-circle-half-left',
+								icon_width:'18',
+								icon_height:'18',
+								text:'Extra cheese',
+							},
+							{
+								icon:'ic-circle-quarter-3_4',
+								icon_width:'18',
+								icon_height:'18',
+								text:'Mushrooms',
+							},
+							{
+								icon:'ic-circle-quarter-4_4',
+								icon_width:'18',
+								icon_height:'18',
+								text:'Black Olives',
+							},
+							{
+								icon:'ic-circle-quarter-1_4',
+								icon_width:'18',
+								icon_height:'18',
+								text:'Corn',
+							},
+							{
+								icon:'ic-circle-quarter-2_4',
+								icon_width:'18',
+								icon_height:'18',
+								text:'Onion',
+							},
+							{text:'Coca-cola 1.5L',},
+							{text:'Garlic sauce',},
+							{text:'Chipotle sauce',},
 						],
 						note:'Note: Without tomato sauce',
 					},
 				],
 			},
 			{
-				title:'102',
-				count:'1/3',
-				name:'Guest',
+				title:'2101',
+				name:'Mike',
+				tag:'New',
+				tag_color:'blue',
 				order_time:'28m ago',
 				status:'TA',
-				status_icon:'ic-bell',
-				status_icon_width:'16',
-				status_icon_height:'16',
+				status_icon:'ic-pen',
+				status_icon_width:'13',
+				status_icon_height:'18',
 				time:'00:12:39',
 				header_color:'green',
 				progress:true,
@@ -164,13 +283,12 @@ export default {
 			},
 			{
 				title:'102',
-				count:'2/3',
 				name:'Guest',
 				order_time:'28m ago',
 				status:'TA',
-				status_icon:'ic-bell',
-				status_icon_width:'16',
-				status_icon_height:'16',
+				status_icon:'ic-pen',
+				status_icon_width:'13',
+				status_icon_height:'18',
 				child:[
 					{
 						id:'3',
@@ -182,33 +300,36 @@ export default {
 						],
 					},
 				],
+				child_blur:true,
+				pager:'1/4',
 				btn_color:'orange'
 			},
 			{
-				title:'102',
-				count:'3/3',
+				title:'2103',
 				name:'Guest',
-				order_time:'28m ago',
-				status:'TA',
-				status_icon:'ic-bell',
-				status_icon_width:'16',
-				status_icon_height:'16',
+				order_time:'1h ago',
+				status:'Delivery',
+				status_icon:'ic-pen',
+				status_icon_width:'13',
+				status_icon_height:'18',
 				child:[
 					{
 						id:'4',
+						num:'3',
 						title:'Pizza Margarita',
 						list:[
 							{text:'Olives'},
 							{text:'Tuna'},
 							{text:'Without tomato sauce'},
 						],
-						note:'Note: This is private party!',
+						note:'Note: Without tomato sauce',
 					},
 				],
 				btn_color:'orange',
+				child_blur:true,
 			},
 			{
-				title:'103',
+				title:'2104',
 				name:'Albert',
 				order_time:'1h ago',
 				status:'Delivery',
@@ -218,18 +339,38 @@ export default {
 				child:[
 					{
 						id:'5',
+						num:'3',
 						title:'Pizza Margarita',
 						list:[
 							{text:'Olives'},
 							{text:'Tuna'},
-							{text:'Without tomato sauce'},
 						],
+						note:'Note: Without tomato sauce',
 					},
 				],
 				btn_status:'disable',
 				btn_color:'orange',
-				disable:true,
+				child_blur:true,
 			},
+		],
+		items:[
+			{text:'Margarita', num:'9'},
+			{text:'Classic', num:'21'},
+			{text:'Bites', num:'16'},
+			{text:'Pizza Margarita', num:'0'},
+			{text:'Crazy Roll', num:'0'},
+			{text:'Pizza Napolitana', num:'5'},
+			{text:'Happy Birthday', num:'7'},
+			{text:'Special Pizza Party', num:'0'},
+			{text:'Japan roll', num:'2'},
+		],
+		groups:[
+			{text:'Oil', num:'9'},
+			{text:'Olives', num:'33'},
+			{text:'Mushrooms', num:'40'},
+			{text:'Coffee', num:'9'},
+			{text:'Tuna', num:'0'},
+			{text:'Corn', num:'0'},
 		]
 	}),
 	methods:{
@@ -253,4 +394,7 @@ export default {
 	@import '@/assets/scss/layouts/main';
 	@import '@/assets/scss/components/panel-actions';
 	@import '@/assets/scss/components/order-card';
+	@import '@/assets/scss/components/sidebar';
+	@import '@/assets/scss/components/components';
+	@import '@/assets/scss/components/table-orders';
 </style>

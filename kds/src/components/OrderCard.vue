@@ -1,7 +1,11 @@
 <template>
-	<div class="order-card">
+	<div :class="['order-card', { 'disable' : disable }, { ['order-card_'+status_card] : status_card }, { 'delete' : del }]">
 		<div class="order-card__border"></div>
+		<div class="order-card__shadow-down"></div>
+		<div class="order-card__shadow-up"></div>
 		<div class="order-card__bg"></div>
+
+		<div class="order-card__label" v-if="status_card == 'hurry_up'">Hurry up</div>
 
 		<div class="order-card__vip" v-if="vip">
 			<svg class="icon ic-crown" width="24" height="24">
@@ -67,11 +71,39 @@
 				:class="['order-card__progress', { ['order-card__progress_'+header_color] : header_color }]"
 				v-if="progress"
 			></div>
+
+			<div class="order-card__del" v-if="del">
+				<svg class="icon ic-trash" width="24" height="26">
+					<use xlink:href="@/assets/sprites/sprite.svg#ic-trash"></use>
+				</svg>
+			</div>
 		</div>
 
-		<div class="order-card__content"> 
-			<div :class="['order-card__list', { 'order-card__content_blur' : child_blur }]">
-				<div class="order-card-item" v-for=" childItem in child">
+		<div class="order-card__content">
+			<div class="order-card__note" v-if="note">{{ note }}</div>
+
+			<div class="order-card__timer" v-if="timer">
+				<svg class="icon ic-clock" width="19" height="19">
+					<use xlink:href="@/assets/sprites/sprite.svg#ic-clock"></use>
+				</svg>
+				{{ timer }}
+			</div>
+
+			<div :class="['order-card__list', { 'order-card__list_blur' : child_blur }]">
+				<div
+					:class="['order-card-item', { 'hold' : holdingId==childItem.id, 'active':childItem.active }]"
+					v-for="childItem in child"
+					@mousedown="holdItem"
+					:data-id="childItem.id"
+					>
+
+					<div class="order-card-item__tag" v-if="childItem.active">
+						<svg class="icon ic-check" width="11" height="8">
+							<use xlink:href="@/assets/sprites/sprite.svg#ic-check"></use>
+						</svg>
+						Done
+					</div>
+
 					<div class="order-card-item__head">
 						<div :class="['order-card-item__num', { ['order-card-item__num_'+childItem.num_color] : childItem.num_color }]" v-if="childItem.num">{{ childItem.num }}</div>
 						
@@ -79,11 +111,27 @@
 					</div>
 
 					<div class="order-card-item__list">
-						<div class="order-card-item__val" v-for="val in childItem.list">{{ val }}</div>
+						<div class="order-card-item__val" v-for="val in childItem.list">
+							<svg
+								:class="'icon '+val.icon"
+								:width="val.icon_width"
+								:height="val.icon_height"
+								v-if="val.icon"
+								>
+								<use :xlink:href="icons+'#'+val.icon"></use>
+							</svg>
+							{{ val.text }}
+						</div>
 					</div>
 
 					<div class="order-card-item__msg" v-if="childItem.note">
 						<div class="msg msg_red">{{ childItem.note }}</div>
+					</div>
+
+					<div class="order-card-item__check" v-if="holdingId==childItem.id">
+						<svg class="icon ic-check" width="19" height="14">
+							<use xlink:href="@/assets/sprites/sprite.svg#ic-check"></use>
+						</svg>
 					</div>
 				</div>
 			</div>
@@ -105,13 +153,16 @@
 			</div>
 		</div>
 
-		<my-button-circle class="btn-circle_orange" v-if="btn_color == 'orange'">
+		<my-button-circle
+			:class="['btn-circle_orange', { 'disable' : btn_status}]"
+			v-if="btn_color == 'orange'"
+		>
 			<svg class="icon ic-play" width="27" height="27">
 				<use xlink:href="@/assets/sprites/sprite.svg#ic-play"></use>
 			</svg>
 		</my-button-circle>
 
-		<my-button-circle v-else>
+		<my-button-circle :class="{ 'disable' : btn_status}" v-else>
 			<svg class="icon ic-check" width="29" height="21">
 				<use xlink:href="@/assets/sprites/sprite.svg#ic-check"></use>
 			</svg>
@@ -129,6 +180,7 @@ export default {
 		MyButtonCircle,
 	},
 	props:[
+		'id',
 		'vip',
 		'icon',
 		'title',
@@ -147,10 +199,22 @@ export default {
 		'child',
 		'pager',
 		'btn_color',
+		'btn_status',
+		'note',
+		'timer',
+		'disable',
+		'status_card',
+		'del',
 	],
 	data: () => ({
 		icons:Icons,
+		holdingId: 0,
 	}),
+	methods:{
+		holdItem(e){
+			this.holdingId = e.currentTarget.getAttribute('data-id');
+		},
+	},
 }
 </script>
 

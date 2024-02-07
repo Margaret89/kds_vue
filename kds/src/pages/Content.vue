@@ -4,16 +4,8 @@
 
 		<ul>
 			<!-- 
+
 			
-			
-			
-		
-			
-			<li><a href="live-hold.html" target="_blank">Live - hold item effect</a></li>
-			<li><a href="live-hold-after.html" target="_blank">Live - after hold item effect</a></li>
-			<li><a href="live-lating-orders.html" target="_blank">Live - lating orders</a></li>
-			<li><a href="live-sidebar.html" target="_blank">Live - with sidebar and pizza example</a></li>
-			<li><a href="live-trash.html" target="_blank">Live - with trash</a></li>
 			<li><a href="trash.html" target="_blank">Trash</a></li>
 			<li><a href="trash-order-selection.html" target="_blank">Trash - order selection</a></li>
 			<li><a href="trash-popup.html" target="_blank">Trash - order selection (popup &quot;Please choose position&quot;)</a></li>
@@ -37,13 +29,16 @@
 			<li><a href="settings-update.html" target="_blank">Settings - check for updates</a></li>
 			<li><a href="settings-update-done.html" target="_blank">Settings - up to date</a></li>
 			<li><a href="settings-update-found.html" target="_blank">Settings - new version found</a></li> -->
-			<li>
-				<li><router-link to="/splash">Splash with loading</router-link></li>
-				<li><router-link to="/registration">Registration</router-link></li>
-				<li><router-link to="/live">Live</router-link></li>
-				<li><router-link to="/live-single-item">Live - single item in card</router-link></li>
-				<li><router-link to="/typography">Typography</router-link></li>
-			</li>
+			<li><router-link to="/splash">Splash with loading</router-link></li>
+			<li><router-link to="/registration">Registration</router-link></li>
+			<li><router-link to="/live">Live</router-link></li>
+			<li><router-link to="/live-single-item">Live - single item in card</router-link></li>
+			<li><router-link to="/live-hold">Live - hold item effect</router-link></li>
+			<li><router-link to="/live-hold-after">Live - after hold item effect</router-link></li>
+			<li><router-link to="/live-lating-orders">Live - lating orders</router-link></li>
+			<li><router-link to="/live-sidebar">Live - with sidebar and pizza example</router-link></li>
+			<li><router-link to="/live-trash">Live - with trash</router-link></li>
+			<li><router-link to="/typography">Typography</router-link></li>
 		</ul>
 	</div>
 </template>

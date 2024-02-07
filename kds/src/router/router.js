@@ -5,6 +5,11 @@ import SplashPage from "@/pages/SplashPage.vue";
 import Registration from "@/pages/Registration.vue";
 import Live from "@/pages/Live.vue";
 import LiveSingleItem from "@/pages/LiveSingleItem.vue";
+import LiveHold from "@/pages/LiveHold.vue";
+import LiveHoldAfter from "@/pages/LiveHoldAfter.vue";
+import LiveLatingOrders from "@/pages/LiveLatingOrders.vue";
+import LiveSidebar from "@/pages/LiveSidebar.vue";
+import LiveTrash from "@/pages/LiveTrash.vue";
 
 const routes = [
   {
@@ -36,6 +41,31 @@ const routes = [
     path: '/live-single-item',
     name: 'live-single-item',
     component: LiveSingleItem
+  },
+  {
+    path: '/live-hold',
+    name: 'live-hold',
+    component: LiveHold
+  },
+  {
+    path: '/live-hold-after',
+    name: 'live-hold-after',
+    component: LiveHoldAfter
+  },
+  {
+    path: '/live-lating-orders',
+    name: 'live-lating-orders',
+    component: LiveLatingOrders
+  },
+  {
+    path: '/live-sidebar',
+    name: 'live-sidebar',
+    component: LiveSidebar
+  },
+  {
+    path: '/live-trash',
+    name: 'live-trash',
+    component: LiveTrash
   },
 ];
 

@@ -124,33 +124,36 @@ export default {
 				progress:true,
 				child:[
 					{
+						id:'1',
 						num:'3',
 						num_color:'orange',
 						title:'Pizza Margarita',
 						list:[
-							'Olives',
-							'Tuna'
+							{text:'Olives'},
+							{text:'Tuna'},
 						],
 						note:'Note: Without tomato sauce',
 					},
 					{
+						id:'2',
 						num:'1',
 						title:'Pizza Margarita',
 						list:[
-							'Olives',
-							'Tuna',
-							'Mushrooms',
+							{text:'Olives'},
+							{text:'Tuna'},
+							{text:'Mushrooms'},
 						]
 					},
 					{
+						id:'3',
 						num:'1',
 						title:'Pizza Margarita',
 						list:[
-							'Olives',
-							'Tuna',
-							'Cheese',
-							'Sauces',
-							'Without tomato sauce',
+							{text:'Olives'},
+							{text:'Tuna'},
+							{text:'Cheese'},
+							{text:'Sauces'},
+							{text:'Without tomato sauce'},
 						]
 					},
 				],
@@ -172,31 +175,34 @@ export default {
 				progress:true,
 				child:[
 					{
+						id:'4',
 						num:'3',
 						num_color:'orange',
 						title:'Pizza Margarita',
 						list:[
-							'Olives',
-							'Tuna',
-							'Without tomato sauce',
+							{text:'Olives'},
+							{text:'Tuna'},
+							{text:'Without tomato sauce'},
 						],
 					},
 					{
+						id:'5',
 						num:'1',
 						title:'Pizza Margarita',
 						list:[
-							'Olives',
-							'Tuna',
-							'Without tomato sauce',
+							{text:'Olives'},
+							{text:'Tuna'},
+							{text:'Without tomato sauce'},
 						]
 					},
 					{
+						id:'6',
 						num:'1',
 						title:'Pizza Margarita',
 						list:[
-							'Olives',
-							'Tuna',
-							'Without tomato sauce',
+							{text:'Olives'},
+							{text:'Tuna'},
+							{text:'Without tomato sauce'},
 						]
 					},
 				]
@@ -211,33 +217,36 @@ export default {
 				status_icon_height:'18',
 				child:[
 					{
+						id:'7',
 						num:'3',
 						num_color:'orange',
 						title:'Pizza Margarita',
 						list:[
-							'Olives',
-							'Tuna'
+							{text:'Olives'},
+							{text:'Tuna'},
 						],
 						note:'Note: Without tomato sauce',
 					},
 					{
+						id:'8',
 						num:'1',
 						title:'Pizza Margarita',
 						list:[
-							'Olives',
-							'Tuna',
-							'Mushrooms',
+							{text:'Olives'},
+							{text:'Tuna'},
+							{text:'Mushrooms'},
 						]
 					},
 					{
+						id:'9',
 						num:'1',
 						title:'Pizza Margarita',
 						list:[
-							'Olives',
-							'Tuna',
-							'Cheese',
-							'Sauces',
-							'Without tomato sauce',
+							{text:'Olives'},
+							{text:'Tuna'},
+							{text:'Cheese'},
+							{text:'Sauces'},
+							{text:'Without tomato sauce'},
 						]
 					},
 				],
@@ -255,12 +264,13 @@ export default {
 				status_icon_height:'18',
 				child:[
 					{
+						id:'10',
 						num:'3',
 						title:'Pizza Margarita',
 						list:[
-							'Olives',
-							'Tuna',
-							'Without tomato sauce',
+							{text:'Olives'},
+							{text:'Tuna'},
+							{text:'Without tomato sauce'},
 						],
 						note:'Note: Without tomato sauce',
 					},
@@ -278,11 +288,12 @@ export default {
 				status_icon_height:'18',
 				child:[
 					{
+						id:'11',
 						num:'3',
 						title:'Pizza Margarita',
 						list:[
-							'Olives',
-							'Tuna'
+							{text:'Olives'},
+							{text:'Tuna'},
 						],
 						note:'Note: Without tomato sauce',
 					},
