@@ -9,9 +9,9 @@
 			
 			
 			
-			<li><a href="archive.html" target="_blank">Archive</a></li>
-			<li><a href="archive-select.html" target="_blank">Archive - remake items selection</a></li>
-			<li><a href="archive-remade-log.html" target="_blank">Archive - remade log</a></li>
+			
+			
+			
 			<li><a href="archive-open-search.html" target="_blank">Archive - opened search</a></li>
 			<li><a href="employee-identification.html" target="_blank">Employee identification</a></li>
 			<li><a href="employee-identification-problems.html" target="_blank">Employee identification problems</a></li>
@@ -41,6 +41,9 @@
 			<li><router-link to="/trash">Trash</router-link></li>
 			<li><router-link to="/trash-selection">Trash - order selection</router-link></li>
 			<li><router-link to="/trash-popup">Trash - order selection (popup &quot;Please choose position&quot;)</router-link></li>
+			<li><router-link to="/archive">Archive</router-link></li>
+			<li><router-link to="/archive-select">Archive - remake items selection</router-link></li>
+			<li><router-link to="/archive-remade-log">Archive - remade log</router-link></li>
 			<li><router-link to="/typography">Typography</router-link></li>
 		</ul>
 	</div>

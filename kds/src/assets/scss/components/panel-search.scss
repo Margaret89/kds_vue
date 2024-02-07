@@ -4,11 +4,22 @@
 	align-items: center;
 	justify-content: space-between;
 	gap: 58px;
-	width: 100%;
-	padding: 17px 36px 17px 17px;
+	width: 0;
+	padding: 17px 0 17px 0;
 	background: #fff;
 	border-radius: 33px;
-	border: 1px solid #D6D8DE;
+	position: absolute;
+	bottom: 37px;
+	right: 46px;
+	z-index: 2;
+	overflow: hidden;
+	transition: width 0.3s ease 0s;
+
+	&.open{
+		width: calc(100% - 92px);
+		padding: 17px 36px 17px 17px;
+		border-color: #D6D8DE;
+	}
 
 	&__sect{position: relative;}
 	&__sect:first-child{width: 100%;}

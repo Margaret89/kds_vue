@@ -1,5 +1,14 @@
 <template>
-	<div :class="['order-card', { 'disable' : disable }, { ['order-card_'+status_card] : status_card }, { 'delete' : del }, { 'order-card_no-clip' : no_clip}, { 'selected' : selected}]">
+	<div 
+	:class="[
+		'order-card',
+		{ 'disable' : disable },
+		{ ['order-card_'+status_card] : status_card },
+		{ 'delete' : del },
+		{ 'order-card_no-clip' : no_clip},
+		{ 'selected' : selected},
+		{ 'order-card_green' : selected_all}
+	]">
 		<div class="order-card__border"></div>
 		<div class="order-card__shadow-down"></div>
 		<div class="order-card__shadow-up"></div>
@@ -14,9 +23,27 @@
 		</div>
 
 		<div class="order-card__top">
+			<div class="order-card-status" v-if="order_status == 'done'">
+				<svg class="icon ic-check" width="10" height="7">
+					<use xlink:href="@/assets/sprites/sprite.svg#ic-check"></use>
+				</svg>Done
+			</div>
+
+			<div class="order-card-status order-card-status_red" v-if="order_status == 'canceled'">
+				<svg class="icon ic-close" width="10" height="10">
+					<use xlink:href="@/assets/sprites/sprite.svg#ic-close"></use>
+				</svg>Canceled
+			</div>
+
+			<div class="order-card__check" v-if="selected_all">
+				<svg class="icon ic-check" width="14" height="10">
+					<use xlink:href="@/assets/sprites/sprite.svg#ic-check"></use>
+				</svg>
+			</div>
+
 			 <div class="order-card__head">
 				<div class="order-card__head-icon" v-if="icon">
-					<svg class="icon ic-tableware" width="30" height="30">
+					<svg class="icon ic-tableware" width="14" height="10">
 						<use xlink:href="@/assets/sprites/sprite.svg#ic-tableware"></use>
 					</svg>
 				</div>
@@ -57,7 +84,11 @@
 					</div>
 				</div>
 
-				<div class="order-card-time" v-if="time">
+				<div
+					class="order-card-time"
+					:class="['order-card-time', { 'order-card-time_green' : time_green }]"
+					v-if="time"
+				>
 					<span class="order-card-time__icon">
 						<svg class="icon ic-clock" width="19" height="19">
 							<use xlink:href="@/assets/sprites/sprite.svg#ic-clock"></use>
@@ -125,11 +156,18 @@
 					</div>
 
 					<div class="order-card-item__msg" v-if="childItem.note">
-						<div class="msg msg_red">{{ childItem.note }}</div>
+						<div class="msg msg_blue" v-if="childItem.note_color=='blue'">{{ childItem.note }}</div>
+						<div class="msg msg_red" v-else>{{ childItem.note }}</div>
 					</div>
 
 					<div class="order-card-item__check" v-if="holdingId==childItem.id">
 						<svg class="icon ic-check" width="19" height="14">
+							<use xlink:href="@/assets/sprites/sprite.svg#ic-check"></use>
+						</svg>
+					</div>
+
+					<div class="order-card__check" v-if="selected_all">
+						<svg class="icon ic-check" width="14" height="10">
 							<use xlink:href="@/assets/sprites/sprite.svg#ic-check"></use>
 						</svg>
 					</div>
@@ -207,6 +245,9 @@ export default {
 		'del',
 		'no_clip',
 		'selected',
+		'order_status',
+		'time_green',
+		'selected_all',
 	],
 	data: () => ({
 		icons:Icons,

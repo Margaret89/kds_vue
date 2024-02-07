@@ -13,6 +13,9 @@ import LiveTrash from "@/pages/LiveTrash.vue";
 import Trash from "@/pages/Trash.vue";
 import TrashSelection from "@/pages/TrashSelection.vue";
 import TrashPopup from "@/pages/TrashPopup.vue";
+import Archive from "@/pages/Archive.vue";
+import ArchiveSelect from "@/pages/ArchiveSelect.vue";
+import ArchiveRemadeLog from "@/pages/ArchiveRemadeLog.vue";
 
 const routes = [
   {
@@ -84,6 +87,21 @@ const routes = [
     path: '/trash-popup',
     name: 'trash-popup',
     component: TrashPopup
+  },
+  {
+    path: '/archive',
+    name: 'archive',
+    component: Archive
+  },
+  {
+    path: '/archive-select',
+    name: 'archive-select',
+    component: ArchiveSelect
+  },
+  {
+    path: '/archive-remade-log',
+    name: 'archive-remade-log',
+    component: ArchiveRemadeLog
   },
 ];
 
