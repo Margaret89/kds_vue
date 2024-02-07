@@ -3,7 +3,7 @@
 		<h1>Content</h1>
 
 		<ul>
-			<!-- <li><a href="splash.html" target="_blank">Splash with loading</a></li>
+			<!-- 
 			<li><a href="registration-empty.html" target="_blank">Registration (empty)</a></li>
 			<li><a href="registration.html" target="_blank">Registration</a></li>
 			<li><a href="registration-password.html" target="_blank">Registration (password)</a></li>
@@ -40,7 +40,8 @@
 			<li><a href="settings-update-done.html" target="_blank">Settings - up to date</a></li>
 			<li><a href="settings-update-found.html" target="_blank">Settings - new version found</a></li> -->
 			<li>
-				<router-link to="/typography">Typography</router-link>
+				<li><router-link to="/splash">Splash with loading</router-link></li>
+				<li><router-link to="/typography">Typography</router-link></li>
 			</li>
 		</ul>
 	</div>

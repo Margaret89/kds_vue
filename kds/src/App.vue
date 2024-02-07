@@ -10,5 +10,5 @@
 @import './assets/scss/utils/fonts';
 @import './assets/scss/utils/reset';
 @import './assets/scss/layouts/main';
-// @import './assets/scss/components/icons';
+@import './assets/scss/components/icons';
 </style>

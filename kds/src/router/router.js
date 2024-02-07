@@ -1,6 +1,7 @@
 import { createWebHistory, createRouter } from "vue-router";
 import Content from "@/pages/Content.vue";
 import Typography from "@/pages/Typography.vue";
+import Splash from "@/pages/Splash.vue";
 
 const routes = [
   {
@@ -12,6 +13,11 @@ const routes = [
     path: '/typography',
     name: 'typography',
     component: Typography
+  },
+  {
+    path: '/splash',
+    name: 'splash',
+    component: Splash
   },
 ];
 
