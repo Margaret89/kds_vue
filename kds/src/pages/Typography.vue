@@ -430,6 +430,7 @@
 import MyButtonCircle from '../components/UI/MyButtonCircle.vue'
 
 export default {
+	name: 'Typography',
 	components: {
 		MyButtonCircle
 	},

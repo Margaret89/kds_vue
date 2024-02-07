@@ -1,7 +1,8 @@
 import { createWebHistory, createRouter } from "vue-router";
 import Content from "@/pages/Content.vue";
 import Typography from "@/pages/Typography.vue";
-import Splash from "@/pages/Splash.vue";
+import SplashPage from "@/pages/SplashPage.vue";
+import Registration from "@/pages/Registration.vue";
 
 const routes = [
   {
@@ -16,8 +17,13 @@ const routes = [
   },
   {
     path: '/splash',
-    name: 'splash',
-    component: Splash
+    name: 'SplashPage',
+    component: SplashPage
+  },
+  {
+    path: '/registration',
+    name: 'registration',
+    component: Registration
   },
 ];
 

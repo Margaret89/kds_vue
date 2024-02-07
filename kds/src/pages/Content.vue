@@ -4,7 +4,7 @@
 
 		<ul>
 			<!-- 
-			<li><a href="registration-empty.html" target="_blank">Registration (empty)</a></li>
+			
 			<li><a href="registration.html" target="_blank">Registration</a></li>
 			<li><a href="registration-password.html" target="_blank">Registration (password)</a></li>
 			<li><a href="splash-reg.html" target="_blank">Splash with loading (registration)</a></li>
@@ -41,6 +41,7 @@
 			<li><a href="settings-update-found.html" target="_blank">Settings - new version found</a></li> -->
 			<li>
 				<li><router-link to="/splash">Splash with loading</router-link></li>
+				<li><router-link to="/registration">Registration</router-link></li>
 				<li><router-link to="/typography">Typography</router-link></li>
 			</li>
 		</ul>
@@ -49,7 +50,7 @@
 
 <script>
 export default {
-	
+	name: 'Content',
 }
 </script>
 
