@@ -3,12 +3,6 @@
 		<h1>Content</h1>
 
 		<ul>
-			<!-- 
-
-
-			<li><a href="settings-update.html" target="_blank">Settings - check for updates</a></li>
-			<li><a href="settings-update-done.html" target="_blank">Settings - up to date</a></li>
-			<li><a href="settings-update-found.html" target="_blank">Settings - new version found</a></li> -->
 			<li><router-link to="/splash">Splash with loading</router-link></li>
 			<li><router-link to="/registration">Registration</router-link></li>
 			<li><router-link to="/live">Live</router-link></li>
@@ -34,6 +28,9 @@
 			<li><router-link to="/enlarge-order-vip">Enlarge order - VIP, toast, mark as done effect</router-link></li>
 			<li><router-link to="/enlarge-item">Enlarge item</router-link></li>
 			<li><router-link to="/change-language">Change language</router-link></li>
+			<li><router-link to="/settings-update">Settings - check for updates</router-link></li>
+			<li><router-link to="/settings-update-done">Settings - up to date</router-link></li>
+			<li><router-link to="/settings-update-found">Settings - new version found</router-link></li>
 			<li><router-link to="/typography">Typography</router-link></li>
 		</ul>
 	</div>

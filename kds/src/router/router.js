@@ -26,6 +26,9 @@ import EnlargeOrder from "@/pages/EnlargeOrder.vue";
 import EnlargeOrderVip from "@/pages/EnlargeOrderVip.vue";
 import EnlargeItem from "@/pages/EnlargeItem.vue";
 import ChangeLanguage from "@/pages/ChangeLanguage.vue";
+import SettingsUpdate from "@/pages/SettingsUpdate.vue";
+import SettingsUpdateDone from "@/pages/SettingsUpdateDone.vue";
+import SettingsUpdateFound from "@/pages/SettingsUpdateFound.vue";
 
 const routes = [
   {
@@ -162,6 +165,21 @@ const routes = [
     path: '/change-language',
     name: 'change-language',
     component: ChangeLanguage
+  },
+  {
+    path: '/settings-update',
+    name: 'settings-update',
+    component: SettingsUpdate
+  },
+  {
+    path: '/settings-update-done',
+    name: 'settings-update-done',
+    component: SettingsUpdateDone
+  },
+  {
+    path: '/settings-update-found',
+    name: 'settings-update-found',
+    component: SettingsUpdateFound
   },
 ];
 
