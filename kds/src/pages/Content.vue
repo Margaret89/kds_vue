@@ -5,20 +5,7 @@
 		<ul>
 			<!-- 
 
-			
-			
-			
-			
-			
-			
-			
-			<li><a href="archive-open-search.html" target="_blank">Archive - opened search</a></li>
-			<li><a href="employee-identification.html" target="_blank">Employee identification</a></li>
-			<li><a href="employee-identification-problems.html" target="_blank">Employee identification problems</a></li>
-			<li><a href="employee-code.html" target="_blank">Employee code</a></li>
-			<li><a href="employee-code-found.html" target="_blank">Employee code found</a></li>
-			<li><a href="employee-password.html" target="_blank">Employee password</a></li>
-			<li><a href="employee-password-wrong.html" target="_blank">Employee wrong password</a></li>
+
 			<li><a href="enlarge-order.html" target="_blank">Enlarge order</a></li>
 			<li><a href="enlarge-order-vip.html" target="_blank">Enlarge order - VIP, toast, mark as done effect</a></li>
 			<li><a href="enlarge-item.html" target="_blank">Enlarge item</a></li>
@@ -44,6 +31,12 @@
 			<li><router-link to="/archive">Archive</router-link></li>
 			<li><router-link to="/archive-select">Archive - remake items selection</router-link></li>
 			<li><router-link to="/archive-remade-log">Archive - remade log</router-link></li>
+			<li><router-link to="/employee-identification">Employee identification</router-link></li>
+			<li><router-link to="/employee-identification-problems">Employee identification -problems</router-link></li>
+			<li><router-link to="/employee-code">Employee code</router-link></li>
+			<li><router-link to="/employee-code-found">Employee code found</router-link></li>
+			<li><router-link to="/employee-password">Employee password</router-link></li>
+			<li><router-link to="/employee-password-wrong">Employee wrong password</router-link></li>
 			<li><router-link to="/typography">Typography</router-link></li>
 		</ul>
 	</div>

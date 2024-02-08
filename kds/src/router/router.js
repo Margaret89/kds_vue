@@ -16,6 +16,12 @@ import TrashPopup from "@/pages/TrashPopup.vue";
 import Archive from "@/pages/Archive.vue";
 import ArchiveSelect from "@/pages/ArchiveSelect.vue";
 import ArchiveRemadeLog from "@/pages/ArchiveRemadeLog.vue";
+import EmployeeIdentification from "@/pages/EmployeeIdentification.vue";
+import EmployeeIdentificationProblems from "@/pages/EmployeeIdentificationProblems.vue";
+import EmployeeCode from "@/pages/EmployeeCode.vue";
+import EmployeeCodeFound from "@/pages/EmployeeCodeFound.vue";
+import EmployeePassword from "@/pages/EmployeePassword.vue";
+import EmployeePasswordWrong from "@/pages/EmployeePasswordWrong.vue";
 
 const routes = [
   {
@@ -102,6 +108,36 @@ const routes = [
     path: '/archive-remade-log',
     name: 'archive-remade-log',
     component: ArchiveRemadeLog
+  },
+  {
+    path: '/employee-identification',
+    name: 'employee-identification',
+    component: EmployeeIdentification
+  },
+  {
+    path: '/employee-identification-problems',
+    name: 'employee-identification-problems',
+    component: EmployeeIdentificationProblems
+  },
+  {
+    path: '/employee-code',
+    name: 'employee-code',
+    component: EmployeeCode
+  },
+  {
+    path: '/employee-code-found',
+    name: 'employee-code-found',
+    component: EmployeeCodeFound
+  },
+  {
+    path: '/employee-password',
+    name: 'employee-password',
+    component: EmployeePassword
+  },
+  {
+    path: '/employee-password-wrong',
+    name: 'employee-password-wrong',
+    component: EmployeePasswordWrong
   },
 ];
 
