@@ -6,7 +6,6 @@
 			<!-- 
 
 
-			<li><a href="settings.html" target="_blank">Settings</a></li>
 			<li><a href="settings-update.html" target="_blank">Settings - check for updates</a></li>
 			<li><a href="settings-update-done.html" target="_blank">Settings - up to date</a></li>
 			<li><a href="settings-update-found.html" target="_blank">Settings - new version found</a></li> -->

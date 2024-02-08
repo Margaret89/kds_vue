@@ -124,7 +124,10 @@
 						</svg>
 					</div>
 
-					<div class="panel-actions-btn__item">
+					<div
+						:class="['panel-actions-btn__item', {'active': isActiveSetting}]"
+						@click="toggleSettings"
+					>
 						<svg class="icon ic-setting" width="34" height="32">
 							<use xlink:href="@/assets/sprites/sprite.svg#ic-setting"></use>
 						</svg>
@@ -134,6 +137,26 @@
 						<svg class="icon ic-search" width="28" height="28">
 							<use xlink:href="@/assets/sprites/sprite.svg#ic-search"></use>
 						</svg>
+					</div>
+				</div>
+
+				<div :class="['setting', {'open': isActiveSetting}]">
+					<div class="setting__item">
+						<div class="setting__icon">
+							<svg class="icon ic-download" width="22" height="22">
+								<use xlink:href="@/assets/sprites/sprite.svg#ic-download"></use>
+							</svg>
+						</div>
+						<div class="setting__text">Check for updates</div>
+					</div>
+
+					<div class="setting__item setting__item_red">
+						<div class="setting__icon">
+							<svg class="icon ic-logout" width="22" height="22">
+								<use xlink:href="@/assets/sprites/sprite.svg#ic-logout"></use>
+							</svg>
+						</div>
+						<div class="setting__text">Log out</div>
 					</div>
 				</div>
 			</div>
@@ -152,6 +175,7 @@ export default {
 	data: () => ({
 		isDay: true,
 		openSearch: false,
+		isActiveSetting: false,
 		list:[
 			{
 				vip: true,
@@ -327,6 +351,10 @@ export default {
 		//Close search panel
 		closeSearchPanel(){
 			this.openSearch = false;
+		},
+		//open/close settings
+		toggleSettings(){
+			this.isActiveSetting = !this.isActiveSetting;
 		},
 	}
 }
