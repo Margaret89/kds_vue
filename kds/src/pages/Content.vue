@@ -6,12 +6,6 @@
 			<!-- 
 
 
-			
-			
-			
-			
-			
-			<li><a href="change-language.html" target="_blank">Change language</a></li>
 			<li><a href="settings.html" target="_blank">Settings</a></li>
 			<li><a href="settings-update.html" target="_blank">Settings - check for updates</a></li>
 			<li><a href="settings-update-done.html" target="_blank">Settings - up to date</a></li>
@@ -40,6 +34,7 @@
 			<li><router-link to="/enlarge-order">Enlarge order</router-link></li>
 			<li><router-link to="/enlarge-order-vip">Enlarge order - VIP, toast, mark as done effect</router-link></li>
 			<li><router-link to="/enlarge-item">Enlarge item</router-link></li>
+			<li><router-link to="/change-language">Change language</router-link></li>
 			<li><router-link to="/typography">Typography</router-link></li>
 		</ul>
 	</div>

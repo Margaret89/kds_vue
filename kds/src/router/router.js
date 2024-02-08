@@ -25,6 +25,7 @@ import EmployeePasswordWrong from "@/pages/EmployeePasswordWrong.vue";
 import EnlargeOrder from "@/pages/EnlargeOrder.vue";
 import EnlargeOrderVip from "@/pages/EnlargeOrderVip.vue";
 import EnlargeItem from "@/pages/EnlargeItem.vue";
+import ChangeLanguage from "@/pages/ChangeLanguage.vue";
 
 const routes = [
   {
@@ -156,6 +157,11 @@ const routes = [
     path: '/enlarge-item',
     name: 'enlarge-item',
     component: EnlargeItem
+  },
+  {
+    path: '/change-language',
+    name: 'change-language',
+    component: ChangeLanguage
   },
 ];
 
