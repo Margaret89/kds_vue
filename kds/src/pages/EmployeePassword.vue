@@ -118,13 +118,11 @@
 
 <script>
 import orderCard from '../components/OrderCard.vue'
-import MyButtonCircle from '../components/UI/MyButtonCircle.vue'
 
 export default {
 	name: 'employee-password',
 	components: {
 		orderCard,
-		MyButtonCircle
 	},
 	data: () => ({
 		isDay: true,

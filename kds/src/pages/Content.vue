@@ -6,11 +6,11 @@
 			<!-- 
 
 
-			<li><a href="enlarge-order.html" target="_blank">Enlarge order</a></li>
-			<li><a href="enlarge-order-vip.html" target="_blank">Enlarge order - VIP, toast, mark as done effect</a></li>
-			<li><a href="enlarge-item.html" target="_blank">Enlarge item</a></li>
-			<li><a href="enlarge-item-video.html" target="_blank">Enlarge item - video instructions</a></li>
-			<li><a href="enlarge-item-instruction.html" target="_blank">Enlarge item - text instructions</a></li>
+			
+			
+			
+			
+			
 			<li><a href="change-language.html" target="_blank">Change language</a></li>
 			<li><a href="settings.html" target="_blank">Settings</a></li>
 			<li><a href="settings-update.html" target="_blank">Settings - check for updates</a></li>
@@ -37,6 +37,9 @@
 			<li><router-link to="/employee-code-found">Employee code found</router-link></li>
 			<li><router-link to="/employee-password">Employee password</router-link></li>
 			<li><router-link to="/employee-password-wrong">Employee wrong password</router-link></li>
+			<li><router-link to="/enlarge-order">Enlarge order</router-link></li>
+			<li><router-link to="/enlarge-order-vip">Enlarge order - VIP, toast, mark as done effect</router-link></li>
+			<li><router-link to="/enlarge-item">Enlarge item</router-link></li>
 			<li><router-link to="/typography">Typography</router-link></li>
 		</ul>
 	</div>

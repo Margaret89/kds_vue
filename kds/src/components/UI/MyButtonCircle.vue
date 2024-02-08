@@ -6,7 +6,7 @@
 
 <script>
 export default {
-	name: 'my-circle-button',
+	name: 'my-button-circle',
 }
 </script>
 

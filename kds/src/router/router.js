@@ -22,6 +22,9 @@ import EmployeeCode from "@/pages/EmployeeCode.vue";
 import EmployeeCodeFound from "@/pages/EmployeeCodeFound.vue";
 import EmployeePassword from "@/pages/EmployeePassword.vue";
 import EmployeePasswordWrong from "@/pages/EmployeePasswordWrong.vue";
+import EnlargeOrder from "@/pages/EnlargeOrder.vue";
+import EnlargeOrderVip from "@/pages/EnlargeOrderVip.vue";
+import EnlargeItem from "@/pages/EnlargeItem.vue";
 
 const routes = [
   {
@@ -138,6 +141,21 @@ const routes = [
     path: '/employee-password-wrong',
     name: 'employee-password-wrong',
     component: EmployeePasswordWrong
+  },
+  {
+    path: '/enlarge-order',
+    name: 'enlarge-order',
+    component: EnlargeOrder
+  },
+  {
+    path: '/enlarge-order-vip',
+    name: 'enlarge-order-vip',
+    component: EnlargeOrderVip
+  },
+  {
+    path: '/enlarge-item',
+    name: 'enlarge-item',
+    component: EnlargeItem
   },
 ];
 

@@ -210,13 +210,9 @@
 
 <script>
 import Icons from '@/assets/sprites/sprite.svg';
-import MyButtonCircle from '../components/UI/MyButtonCircle.vue'
 
 export default {
 	name: 'order-card',
-	components: {
-		MyButtonCircle,
-	},
 	props:[
 		'id',
 		'vip',
