@@ -131,6 +131,7 @@ export default {
 		isActiveSetting: false,
 		list:[
 			{
+				id:'1',
 				vip: true,
 				icon:'ic-tableware',
 				icon_width:'30',
@@ -185,6 +186,7 @@ export default {
 				btn_status:'disable'
 			},
 			{
+				id:'2',
 				title:'2101',
 				name:'Mike',
 				tag:'New',
@@ -232,6 +234,7 @@ export default {
 				]
 			},
 			{
+				id:'3',
 				title:'2102',
 				name:'Guest',
 				order_time:'1h ago',
@@ -279,6 +282,7 @@ export default {
 				btn_color:'orange'
 			},
 			{
+				id:'4',
 				title:'2103',
 				name:'Guest',
 				order_time:'1h ago',
@@ -303,6 +307,7 @@ export default {
 				child_blur:true,
 			},
 			{
+				id:'5',
 				title:'2104',
 				name:'Albert',
 				order_time:'1h ago',

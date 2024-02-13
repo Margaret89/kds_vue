@@ -43,7 +43,7 @@
 
 			 <div class="order-card__head">
 				<div class="order-card__head-icon" v-if="icon">
-					<svg class="icon ic-tableware" width="14" height="10">
+					<svg class="icon ic-tableware" width="30" height="30">
 						<use xlink:href="@/assets/sprites/sprite.svg#ic-tableware"></use>
 					</svg>
 				</div>
