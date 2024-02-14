@@ -100,7 +100,7 @@
 
 			<div
 				:class="['order-card__progress', { ['order-card__progress_'+header_color] : header_color }]"
-				v-if="progress"
+				v-if="progress || hideBlurElem"
 			></div>
 
 			<div class="order-card__del" v-if="del">
@@ -120,15 +120,17 @@
 				{{ timer }}
 			</div>
 
-			<div :class="['order-card__list', { 'order-card__list_blur' : child_blur }]">
+			<div :class="['order-card__list', { 'order-card__list_blur' : child_blur && !hideBlurElem }]">
 				<div
-					:class="['order-card-item', { 'hold' : holdingId==childItem.id, 'active':childItem.active }]"
+					
+					:class="['order-card-item', { 'hold' : holdingId==childItem.id, 'active':childItem.active || isDoneId ==childItem.id }]"
 					v-for="childItem in child"
-					@mousedown="holdItem"
+					@pointerdown="holdStart"
+    				@pointerup="holdFinish"
 					:data-id="childItem.id"
 					>
 
-					<div class="order-card-item__tag" v-if="childItem.active">
+					<div class="order-card-item__tag" v-if="childItem.active || isDoneId ==childItem.id">
 						<svg class="icon ic-check" width="11" height="8">
 							<use xlink:href="@/assets/sprites/sprite.svg#ic-check"></use>
 						</svg>
@@ -194,6 +196,8 @@
 		<my-button-circle
 			:class="['btn-circle_orange', { 'disable' : btn_status}]"
 			v-if="btn_color == 'orange'"
+			@click="hideBlur"
+
 		>
 			<svg class="icon ic-play" width="27" height="27">
 				<use xlink:href="@/assets/sprites/sprite.svg#ic-play"></use>
@@ -248,11 +252,37 @@ export default {
 	data: () => ({
 		icons:Icons,
 		holdingId: 0,
+		isDoneId: 0,
+		hideBlurElem: false,
+		pressTimer: null,
 	}),
 	methods:{
-		holdItem(e){
-			this.holdingId = e.currentTarget.getAttribute('data-id');
+		// Holding Start
+		holdStart(e){
+			let curId = e.currentTarget.getAttribute('data-id');
+
+			if(this.isDoneId != curId){
+				this.holdingId = curId;
+	
+				console.log('this.isDoneId = ', this.isDoneId);
+	
+				//Changing the status to done
+				this.pressTimer = setTimeout(() => {
+					this.isDoneId = curId;
+					this.holdingId = 0;
+				}, 3000)
+			}
 		},
+		
+		holdFinish(){
+			this.holdingId = 0;
+			clearTimeout(this.pressTimer);
+			console.log('holdFinish');
+			console.log('this.isDoneId = ', this.isDoneId);
+		},
+		hideBlur(){
+			this.hideBlurElem = true;
+		}
 	},
 }
 </script>
